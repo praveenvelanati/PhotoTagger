@@ -16,7 +16,33 @@
 		93EF0CAB1BF41DA20051B5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAA1BF41DA20051B5B1 /* Assets.xcassets */; };
 		93EF0CAE1BF41DA20051B5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAC1BF41DA20051B5B1 /* LaunchScreen.storyboard */; };
 		9569363E1E0B06AC00B49A5A /* TagsColorTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */; };
+		C316D72C252A612200289840 /* ImaggaRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C316D728252A610600289840 /* ImaggaRouter.framework */; };
+		C316D72D252A612200289840 /* ImaggaRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C316D728252A610600289840 /* ImaggaRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C316D727252A610600289840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C316D723252A610600289840 /* ImaggaRouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C316D715252A5F1400289840;
+			remoteInfo = ImaggaRouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C316D72E252A612300289840 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C316D72D252A612200289840 /* ImaggaRouter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoColor.swift; sourceTree = "<group>"; };
@@ -30,6 +56,7 @@
 		93EF0CAD1BF41DA20051B5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93EF0CAF1BF41DA20051B5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsColorTableData.swift; sourceTree = "<group>"; };
+		C316D723252A610600289840 /* ImaggaRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImaggaRouter.xcodeproj; path = Frameworks/Internal/ImaggaRouter/ImaggaRouter.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C316D72C252A612200289840 /* ImaggaRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +74,10 @@
 		93EF0C971BF41DA20051B5B1 = {
 			isa = PBXGroup;
 			children = (
+				C316D723252A610600289840 /* ImaggaRouter.xcodeproj */,
 				93EF0CA21BF41DA20051B5B1 /* PhotoTagger */,
 				93EF0CA11BF41DA20051B5B1 /* Products */,
+				C316D72B252A612200289840 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -78,6 +108,21 @@
 			path = PhotoTagger;
 			sourceTree = "<group>";
 		};
+		C316D724252A610600289840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C316D728252A610600289840 /* ImaggaRouter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C316D72B252A612200289840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +133,7 @@
 				93EF0C9C1BF41DA20051B5B1 /* Sources */,
 				93EF0C9D1BF41DA20051B5B1 /* Frameworks */,
 				93EF0C9E1BF41DA20051B5B1 /* Resources */,
+				C316D72E252A612300289840 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,18 +165,35 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 93EF0C971BF41DA20051B5B1;
 			productRefGroup = 93EF0CA11BF41DA20051B5B1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C316D724252A610600289840 /* Products */;
+					ProjectRef = C316D723252A610600289840 /* ImaggaRouter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				93EF0C9F1BF41DA20051B5B1 /* PhotoTagger */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C316D728252A610600289840 /* ImaggaRouter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ImaggaRouter.framework;
+			remoteRef = C316D727252A610600289840 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93EF0C9E1BF41DA20051B5B1 /* Resources */ = {
@@ -280,7 +343,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.PhotoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -295,7 +358,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.PhotoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

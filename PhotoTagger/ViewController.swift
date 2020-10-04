@@ -80,7 +80,7 @@ class ViewController: UIViewController {
 extension ViewController: UIImagePickerControllerDelegate {
 
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
-    guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+    guard let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage else {
       print("Info did not have the required UIImage for the Original Image")
       dismiss(animated: true)
       return
