@@ -4,3 +4,6 @@
 [submodule "Frameworks/External/Alamofire"]
 	path = Frameworks/External/Alamofire
 	url = https://github.com/Alamofire/Alamofire.git
+[submodule "/Users/praveenvelanati/Documents/PhotoTagger/Frameworks/Internal/ProfileView"]
+	path = /Users/praveenvelanati/Documents/PhotoTagger/Frameworks/Internal/ProfileView
+	url = https://github.com/praveenvelanati/ProfileView.git
